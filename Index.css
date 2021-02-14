@@ -1,0 +1,206 @@
+/* body */
+body{
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+    background-color: #EFEEEE;
+}
+
+/* Navbar */
+nav{
+    margin: 10px;
+}
+.navbar-brand{
+    margin-left:20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    color: black;
+    vertical-align: baseline !important;
+}
+.navbar-brand:hover{
+    color: black;
+    text-decoration: 4px underline orange;
+
+}
+.nav-item{
+    margin-left:20px;
+    margin-right:20px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: orange;
+}
+/* .nav-item:hover{
+    box-shadow: inset -6px -6px 26px rgba(255, 255, 255 ,0.83),inset 6px 6px 16px rgba(217, 210, 200, 0.51);
+} */
+.container{
+    margin-top: 2px;
+    
+}
+.box{
+    border-radius: 1%;
+    box-shadow: -6px -6px 26px rgba(255, 255, 255 ,0.83), 6px 6px 16px rgba(217, 210, 200, 0.51);
+}
+.row-one{
+    margin-right: 10%;
+    padding-bottom: 4%;
+}
+
+#about-me-head{
+    font-size: calc(2em + 4vw);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    margin: 0px 0px 3% 3%;
+    padding-top: 1.5%;
+}
+#profile-pic{
+    text-align: center;
+    width: calc(5em + 8vw); 
+    text-align: center !important;
+    border-radius: 50%; 
+    border: inset 1px lightblue;
+    margin-right: 0px !important;
+}
+.profile-pic-col{
+    text-align: center;
+}
+.about-me-detail{
+    margin-right: 10px;
+    position: fixed !important;
+}
+
+
+
+/* Second row */
+.row-two{
+    margin-top: 25px;
+}
+.linkedin-logo-box{
+    text-align: center;
+}
+#linkedin-head{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    margin: 3%;
+}
+#linkedin-logo{
+    width: 64px;
+    text-align: center;
+    margin-top: 10%;
+
+}
+#github-logo{
+    margin-top: 10%;
+    width: 64px;
+    text-align: center;
+}
+.github-logo-box{
+    text-align: center;
+}
+#github-head{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    margin: 3%;
+
+}
+a:hover{
+    text-decoration: none;
+}
+
+/* row3 */
+.resume-box{
+    margin-top: 25px;
+}
+.cv-logo-col{
+    padding: 25px 25px 10px 40px;
+}
+
+
+#cv-logo{
+    margin-left: 10%;
+    width: 64px;
+}
+#cv-head{
+    margin-top: 10px !important;
+
+}
+#resume-head{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    padding: 2% 3% 0% 3%;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flexi{
+    min-height: 24px;
+}
+
+  .wrapper .item {
+    visibility: hidden;
+    display: none;
+  }
+
+  .wrapper > div {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    color: orange;
+  }
+  .wrapper > div:after {
+    content: "";
+    width: 10px;
+    height: 4px;
+    display: block;
+    background: black;
+    color: orange;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    animation-duration: 350ms;
+    animation-name: fade;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
