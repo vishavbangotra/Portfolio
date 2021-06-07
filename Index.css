@@ -109,30 +109,29 @@ nav{
 a:hover{
     text-decoration: none;
 }
-
 /* row3 */
 .resume-box{
-    margin-top: 25px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #EFEEEE;
+    border: 1px solid #212529;
+    border-radius: 1%;
+    text-align: center;
+    width: 75%;
 }
-.cv-logo-col{
-    padding: 25px 25px 10px 40px;
+.resume-box:hover{
+    background-color: #212529;
+    border: none;
+    color: #EFEEEE;
 }
-
 
 #cv-logo{
     margin-left: 10%;
     width: 64px;
 }
 #cv-head{
-    margin-top: 10px !important;
-
+    color: #212529;
 }
-#resume-head{
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 400;
-    padding: 2% 3% 0% 3%;    
-}
-
 
 
 
