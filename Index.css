@@ -37,9 +37,6 @@ nav{
 .nav-link:hover{
     color: orange;
 }
-/* .nav-item:hover{
-    box-shadow: inset -6px -6px 26px rgba(255, 255, 255 ,0.83),inset 6px 6px 16px rgba(217, 210, 200, 0.51);
-} */
 .container{
     margin-top: 2px;
     
@@ -51,12 +48,11 @@ nav{
 }
 .btn-outline-warning:hover{
     color: orange;
-    
-    background-color: rgba(255, 165, 0, 0.2)
+    background-color: rgba(255, 165, 0, 0.2)!important;
 }
 .box{
-    border-radius: 1%;
-    box-shadow: -6px -6px 26px rgba(255, 255, 255 ,0.83), 6px 6px 16px rgba(217, 210, 200, 0.51);
+    border-radius: 1%!important;
+    box-shadow: -6px -6px 26px rgba(255, 255, 255 ,0.83), 6px 6px 16px rgba(217, 210, 200, 0.51)!important;
 }
 .row-one{
     margin-right: 10%;
