@@ -9,6 +9,9 @@ body{
 nav{
     margin: 10px;
 }
+.navbar-nav{
+    align-items: center;
+}
 .navbar-brand{
     margin-left:20px;
     font-family: 'Roboto', sans-serif;
@@ -25,7 +28,8 @@ nav{
 .nav-item{
     margin-left:20px;
     margin-right:20px;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-family: 'Open sans', sans-serif;
 }
 .nav-link{
     color: black;
@@ -39,6 +43,16 @@ nav{
 .container{
     margin-top: 2px;
     
+}
+.btn-outline-warning{
+    border: 2px solid orange !important;
+    color: orange;
+    font-weight: 500;
+}
+.btn-outline-warning:hover{
+    color: orange;
+    
+    background-color: rgba(255, 165, 0, 0.2)
 }
 .box{
     border-radius: 1%;
