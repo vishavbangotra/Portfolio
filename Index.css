@@ -4,7 +4,9 @@ body{
     vertical-align: baseline;
     background-color: #EFEEEE;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 /* Navbar */
 nav{
     margin: 10px;
@@ -54,17 +56,31 @@ nav{
     border-radius: 1%!important;
     box-shadow: -6px -6px 26px rgba(255, 255, 255 ,0.83), 6px 6px 16px rgba(217, 210, 200, 0.51)!important;
 }
+.github-box:hover{
+    box-shadow: inset -6px -6px 26px rgba(255, 255, 255 ,0.83), inset 6px 6px 16px rgba(217, 210, 200, 0.51) !important;
+}
+.linkedin-box:hover{
+    box-shadow: inset -6px -6px 26px rgba(255, 255, 255 ,0.83), inset 6px 6px 16px rgba(217, 210, 200, 0.51) !important;
+}
+
 .row-one{
     margin-right: 10%;
     padding-bottom: 4%;
 }
 
 #about-me-head{
-    font-size: calc(2em + 4vw);
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 300;
+    font-size: calc(1em + 1vw);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
     margin: 0px 0px 3% 3%;
     padding-top: 1.5%;
+}
+#about-me-head:before{
+    content:'01. ';
+    color: orange;
+}
+hr{
+    border: 1px solid blue;
 }
 #profile-pic{
     text-align: center;
@@ -118,21 +134,6 @@ nav{
 }
 a:hover{
     text-decoration: none;
-}
-/* row3 */
-.resume-box{
-    margin: auto;
-    margin-top: 15px;
-    background-color: #EFEEEE;
-    border: 1px solid #212529;
-    border-radius: 1%;
-    text-align: center;
-    width: 75%;
-}
-.resume-box:hover{
-    background-color: #212529;
-    border: none;
-    color: #EFEEEE;
 }
 
 #cv-logo{

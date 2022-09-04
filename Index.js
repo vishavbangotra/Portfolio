@@ -1,28 +1,31 @@
 console.log('connected')
-$('.github-box').mouseenter(function(){
-    $('#github-logo').css("filter", 'invert(73%) sepia(59%) saturate(5851%) hue-rotate(360deg) brightness(107%) contrast(106%)');
-    $('.github-box').css("box-shadow", 'inset -6px -6px 26px rgba(255, 255, 255 ,0.83), inset 6px 6px 16px rgba(217, 210, 200, 0.51)');
 
+$('.github-box').mouseenter(function(){
+    console.log("github mouse enter");
+    $('#github-logo').css("filter", 'invert(73%) sepia(59%) saturate(5851%) hue-rotate(360deg) brightness(107%) contrast(106%)');
+    // $('.github-box').css("box-shadow", 'inset -6px -6px 26px rgba(255, 255, 255 ,0.83), inset 6px 6px 16px rgba(217, 210, 200, 0.51)');
+    
 })
 $('.github-box').mouseleave(function(){
     $('#github-logo').css("filter", 'none')
-    $('.github-box').css("box-shadow", '-6px -6px 26px rgba(255, 255, 255 ,0.83), 6px 6px 16px rgba(217, 210, 200, 0.51)');
+    // $('.github-box').css("box-shadow", '-6px -6px 26px rgba(255, 255, 255 ,0.83), 6px 6px 16px rgba(217, 210, 200, 0.51)');
+    
 })
 $('.linkedin-box').mouseenter(function(){
     $('#linkedin-logo').css("filter", 'brightness(0) saturate(100%)invert(73%) sepia(59%) saturate(5851%) hue-rotate(360deg) brightness(107%) contrast(106%)')
-    $('.linkedin-box').css("box-shadow", 'inset -6px -6px 26px rgba(255, 255, 255 ,0.83), inset 6px 6px 16px rgba(217, 210, 200, 0.51)');
+    // $('.linkedin-box').css("box-shadow", 'inset -6px -6px 26px rgba(255, 255, 255 ,0.83), inset 6px 6px 16px rgba(217, 210, 200, 0.51)');
 })
 $('.linkedin-box').mouseleave(function(){
     $('#linkedin-logo').css("filter", 'none');
-    $('.linkedin-box').css("box-shadow", '-6px -6px 26px rgba(255, 255, 255 ,0.83), 6px 6px 16px rgba(217, 210, 200, 0.51)');
+    // $('.linkedin-box').css("box-shadow", '-6px -6px 26px rgba(255, 255, 255 ,0.83), 6px 6px 16px rgba(217, 210, 200, 0.51)');
 })
-$('.resume-box').mouseenter(function(){
-    console.log("done");
-    $('#cv-head').css("color", "#EFEEEE");
-})
-$('.resume-box').mouseleave(function(){
-  $('#cv-head').css("color", "#212529");
-})
+// $('.resume-box').mouseenter(function(){
+//     console.log("done");
+//     $('#cv-head').css("color", "#EFEEEE");
+// })
+// $('.resume-box').mouseleave(function(){
+//   $('#cv-head').css("color", "#212529");
+// })
 // $('.resume-box').mouseenter(function(){
 //   $('#cv-logo').css("filter", 'brightness(0) saturate(100%)invert(73%) sepia(59%) saturate(5851%) hue-rotate(360deg) brightness(107%) contrast(106%)')
 //   $('.resume-box').css("box-shadow", 'inset -6px -6px 26px rgba(255, 255, 255 ,0.83), inset 6px 6px 16px rgba(217, 210, 200, 0.51)');
