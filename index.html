@@ -19,47 +19,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/Index.css">
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-sm">
-            <a class="navbar-brand" href="#"><img src="logo4.png" width="10%"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><span style="color:orange; white-space:nowrap;">01. </span>About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#Projects"><span style="color:orange; white-space:nowrap;">02. </span>Projects</a>
-                </li>
-                <li class="nav-item edu-nav-item">
-                <a class="nav-link" href="#"><span style="color:orange; white-space:nowrap;">03. </span>Education</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#"><span style="color:orange; white-space:nowrap;">04. </span>Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://drive.google.com/file/d/19B1twPj0WNjpwt0HRIjFSsiN1LhTuw6P/view?usp=sharing" target="_blank" type="button" class="btn btn-outline-warning">Resume</a>
-                </li>
-            </ul>
-            </div>
-        </nav>
-        <!-- Navbar -->
+        <div id="nav-placeholder">
 
-        <!-- jquery -->
+        </div>
         
         <div class="container">
             <div class='box'>
-                <h1 id='about-me-head'>About Me <hr></h1></h1>
+                <h1 id='about-me-head'>About Me</h1>
                 <div class='row row-one'>
                     <div class="col-lg-4 profile-pic-col">
-                        <img id="profile-pic"src="profilepic.jpg" alt="no img">
+                        <img id="profile-pic" src="media/profilepic.JPG" alt="no img">
                     </div>
-                    <div class='col-lg-8 about-me-detail-col'>
+                    <div class='col-lg-8 mx-auto'>
                         <div class="wrapper">
                             <div class='flexi'data-text></div>
                             <span class="item">Web Developer</span>
@@ -67,73 +45,27 @@
                             <span class="item">Software Engineer</span>
 
                         </div>
-                        <p class='' id='about-me-detail'>
-                            I am a final year student currently pursuing a Bachelors in Electronics and Communication Engineering at UIET Panjab Univeristy, Chandigarh.
-                            My goal is to gain in depth knowledge in the field of software engineering and contribute to the same. I am looking for intern as well as full time oppertunities in Software Development.
+                        <p id='about-me-detail'>
+    
                         </p>
-                        <p>
-                            <strong>Email:</strong> vishavue195130ece@gmail.com
-                            <br>
-                            <strong>Phone:</strong> (+91) 8082201833
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-two justify-content-around">
-                <div class="col-md-5 box linkedin-box" >
-                    <a style="color:#212529;" href="https://www.linkedin.com/in/vishav-bangotra/" target="_blank">
-                    <h2 id='linkedin-head'>LinkedIn</h2>
-                    <div class='row'>
-                        <div class='col-sm-4 linkedin-logo-box'>
-                            <img id='linkedin-logo' src="Linkedin.png" alt="">
+                        <div class="row justify-content-md-center mx-20">
+                            <div class="col-md-auto">
+                                <img id='linkedin-logo' src="media/Linkedin.png" alt="">
+                            </div>
+                            <div class="col-md-auto">
+                                <img id='github-logo' src="media/github-logo.svg" >
+                            </div>
+                            <div class="col-sm-4">
+                                
+                            </div>
                         </div>
-                        <div style="padding-right: 6%" class='col-sm-8'>
-                            <h4>Connect with me!</h4>
-                            <p>Join my Professional Network and take a look at my Skills and Achievements.</p>
-                        </div>
-                    </div>
-                </a>
-                </div>
-                <div class="col-md-5 box github-box">
-                    <a style="color:#212529;" href="https://github.com/vishavbangotra" target="_blank">
-                    <h2 id='github-head'>Github</h2>
-                    <div class='row'>
-                        <div class='col-sm-4 github-logo-box'>
-                            <img id='github-logo' src="github-logo.svg" >
-                        </div>
-                        <div style="padding-right: 6%"class='col-sm-8'>
-                            <h4>Have a look!</h4>
-                            <p>Have a look at my Open-Source Projects. Feel welcome to contribute in my Projects and help boost Open-Source Community.</p>
-                            <br>
-                        </div>
-                    </div>
-                </a>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div id="Projects">
-                <h1 id='about-me-head'>Projects</h1>
-                <div class="box">
-                    <div class="row container">
-                        <div class="col">
-                            <h2>IMEI Validator</h2>
-                            <img src="p1-imei.png" style="width: 100%; margin: auto;">
-                        </div>
-                        <div class="col"></div>
-                    </div>
-                    
-                </div>
-                <div class="box">
-                    Project1
-                </div>
-                <div class="box">
-                    Project1
-                </div>
-            </div>
 
+                    </div>
+                </div>
+            </div>
+           
         </div>
-        <script type="text/javascript" src="Index.js"></script>
+        <script type="text/javascript" src="static/js/Index.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 
         </script>
