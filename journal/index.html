@@ -1,0 +1,48 @@
+---
+layout: default
+title: Journal
+permalink: /journal/
+description: Written at the end of the day. On work, on reading, on the climb.
+---
+<section class="hero hero--tight">
+  <p class="eyebrow">Journal</p>
+  <h1 class="display">Written at the end of the day.</h1>
+  <p class="lede hero__lede measure">On work, on reading, on the climb. Plain notes, kept honestly.</p>
+</section>
+
+<div data-journal>
+  <div class="filter-bar">
+    <div class="filters" role="group" aria-label="Filter by topic" data-filters hidden>
+      <button class="filter" type="button" aria-pressed="true" data-topic-filter="All">All <span class="filter__count">{{ site.posts.size }}</span></button>
+      {%- for topic in site.journal_topics %}
+      {%- assign in_topic = site.posts | where: "topic", topic %}
+      <button class="filter" type="button" aria-pressed="false" data-topic-filter="{{ topic }}">{{ topic }} <span class="filter__count">{{ in_topic.size }}</span></button>
+      {%- endfor %}
+    </div>
+    <p class="mono" data-count aria-live="polite">{{ site.posts.size }} {% if site.posts.size == 1 %}entry{% else %}entries{% endif %}</p>
+  </div>
+
+  <ol class="rows">
+    {%- for post in site.posts %}
+    <li data-entry data-topic="{{ post.topic }}">
+      <a class="entry-row" href="{{ post.url | relative_url }}">
+        <span class="entry-row__date"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %b %Y" }}</time></span>
+        <span class="entry-row__body">
+          <span class="eyebrow">{{ post.topic }}</span>
+          <span class="h-item">{{ post.title }}</span>
+          <span class="small">{{ post.description }}</span>
+        </span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ol>
+
+  <div class="empty" data-empty{% if site.posts.size > 0 %} hidden{% endif %}>
+    <p class="lede">Nothing written here yet.</p>
+    <p class="small">The first entry is the only hard one.</p>
+  </div>
+
+  <div class="more" data-more hidden>
+    <button class="btn btn--outline" type="button">Older entries</button>
+  </div>
+</div>

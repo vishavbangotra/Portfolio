@@ -1,0 +1,21 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="site-footer__contact">
+      <p class="site-footer__invite">Write to me.</p>
+      <a class="link link--ember" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+    <ul class="site-footer__links">
+      {%- if site.social.github != "" %}
+      <li><a class="nav__link" href="{{ site.social.github }}">GitHub</a></li>
+      {%- endif %}
+      {%- if site.social.linkedin != "" %}
+      <li><a class="nav__link" href="{{ site.social.linkedin }}">LinkedIn</a></li>
+      {%- endif %}
+      {%- if site.social.resume != "" %}
+      <li><a class="nav__link" href="{{ site.social.resume }}">Résumé</a></li>
+      {%- endif %}
+      <li><a class="nav__link" href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+    </ul>
+    <p class="eyebrow site-footer__colophon">© {{ site.time | date: "%Y" }} · Built by hand · Hosted on GitHub Pages</p>
+  </div>
+</footer>

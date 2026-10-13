@@ -1,0 +1,18 @@
+{%- assign url = page.url | default: "/" -%}
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}"{% if url == "/" %} aria-current="page"{% endif %}>
+      <svg width="28" height="20" viewBox="0 0 28 20" aria-hidden="true"><line class="brand__horizon" x1="1" y1="18" x2="27" y2="18" stroke-width="1.5" stroke-linecap="square"/><circle class="brand__stone" cx="18" cy="10" r="6"/></svg>
+      <span class="brand__name">{{ site.title }}</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__link" href="{{ '/work/' | relative_url }}"{% if url contains "/work/" %} aria-current="page"{% endif %}>Work</a>
+      <a class="nav__link" href="{{ '/journal/' | relative_url }}"{% if url contains "/journal/" %} aria-current="page"{% endif %}>Journal</a>
+      <a class="nav__link" href="{% if url == '/' %}#about{% else %}{{ '/#about' | relative_url }}{% endif %}">About</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to night theme">
+        {%- include icon.html name="moon" -%}
+        {%- include icon.html name="sun" -%}
+      </button>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,11 @@
+{%- comment -%} Side-by-side options on a case study, from the page's `options` front matter. {%- endcomment -%}
+{%- assign letters = "A,B,C,D,E,F" | split: "," -%}
+<div class="cards cards--narrow options">
+  {%- for option in page.options %}
+  <div class="card option">
+    <p class="eyebrow">Option {{ letters[forloop.index0] }}</p>
+    <h3 class="h-item">{{ option.title }}</h3>
+    <p>{{ option.text }}</p>
+  </div>
+  {%- endfor %}
+</div>
