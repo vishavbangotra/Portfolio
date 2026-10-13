@@ -6,7 +6,9 @@
 - MongoDB
 - PostgreSQL
 - Redis
+- Snowflake
 - Aerospike
 - AWS
 - Python · FastAPI
+- LangGraph · RAG
 - Docker

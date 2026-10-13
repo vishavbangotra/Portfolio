@@ -15,7 +15,7 @@ baseurl: "/Portfolio"
 # Links shown in the footer. Leave a value empty to hide its link.
 social:
   github: "https://github.com/vishavbangotra"
-  linkedin: "" # TODO: e.g. https://www.linkedin.com/in/<handle>/
+  linkedin: "https://www.linkedin.com/in/vishav-bangotra/"
   resume: "https://drive.google.com/file/d/19B1twPj0WNjpwt0HRIjFSsiN1LhTuw6P/view?usp=sharing"
 
 # Topics used to filter the journal, in display order.
