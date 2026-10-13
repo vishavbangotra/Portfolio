@@ -1,0 +1,59 @@
+---
+layout: default
+title: Work
+permalink: /work/
+description: Where I've worked, what I've built, and what I'm still building.
+---
+<section class="hero hero--work">
+  <p class="eyebrow">Work</p>
+  <h1 class="display hero__title--narrow">Systems that move money, and the ones I build to learn.</h1>
+  <p class="hero__intro measure">Most of what I do is backend: services that talk to lenders, queues that must not lose a message, data that has to reconcile at the end of the day. Below is the record — where I've worked, what I've built, and what I'm still building.</p>
+</section>
+
+<section class="section--ruled" aria-labelledby="exp-h">
+  <h2 id="exp-h" class="h-section section-title">Experience</h2>
+  <ol class="rows">
+    {%- for job in site.data.experience %}
+    <li class="exp-row">
+      <p class="exp-row__dates">{{ job.dates }}</p>
+      <div class="exp-row__body">
+        <h3 class="h-item">{{ job.org }}</h3>
+        {%- if job.role and job.role != "" %}
+        <p class="small exp-row__role">{{ job.role }}</p>
+        {%- endif %}
+        {%- if job.summary %}
+        <p class="exp-row__summary">{{ job.summary }}</p>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+
+<section class="section" aria-labelledby="proj-h">
+  <h2 id="proj-h" class="h-section section-title">Projects</h2>
+  <div class="cards">
+    {%- for p in site.data.projects %}
+    <article class="card" id="{{ p.id }}">
+      <p class="eyebrow">{{ p.label }}</p>
+      <h3 class="h-item">{{ p.title }}</h3>
+      <p class="card__text">{{ p.description }}</p>
+      <p class="mono">{{ p.stack }}</p>
+      {%- if p.case_study %}
+      <a class="link link--ember" href="{% include project-link.html project=p %}">Read the case study {% include icon.html name="arrow-right" px=16 %}</a>
+      {%- endif %}
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section split" aria-labelledby="tools-h">
+  <div class="split__label">
+    <h2 id="tools-h" class="eyebrow">Tools I reach for</h2>
+  </div>
+  <ul class="split__body chips">
+    {%- for tool in site.data.tools %}
+    <li class="chip">{{ tool }}</li>
+    {%- endfor %}
+  </ul>
+</section>

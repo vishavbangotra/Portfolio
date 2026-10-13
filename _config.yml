@@ -1,0 +1,57 @@
+# Site settings — GitHub Pages builds this with Jekyll automatically.
+title: Vishav Bangotra
+description: >-
+  Backend engineer in Gurugram, building lending systems by day and writing
+  to make sense of the climb.
+author: Vishav Bangotra
+email: vishav.bangotra@gmail.com
+lang: en
+
+# This repo is served as a project site at https://vishavbangotra.github.io/Portfolio/.
+# If you add a custom domain (CNAME), set baseurl to "" and url to that domain.
+url: "https://vishavbangotra.github.io"
+baseurl: "/Portfolio"
+
+# Links shown in the footer. Leave a value empty to hide its link.
+social:
+  github: "https://github.com/vishavbangotra"
+  linkedin: "" # TODO: e.g. https://www.linkedin.com/in/<handle>/
+  resume: "https://drive.google.com/file/d/19B1twPj0WNjpwt0HRIjFSsiN1LhTuw6P/view?usp=sharing"
+
+# Topics used to filter the journal, in display order.
+journal_topics:
+  - Philosophy
+  - Engineering
+  - Music
+
+timezone: Asia/Kolkata
+permalink: /journal/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
+collections:
+  projects:
+    output: true
+    permalink: /work/:name/
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: entry }
+  - scope: { path: "", type: projects }
+    values: { layout: project }
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: feed.xml
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

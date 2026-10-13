@@ -1,0 +1,9 @@
+{%- comment -%} The build log on a case study, from the page's `log` front matter. {%- endcomment -%}
+<ol class="log">
+  {%- for item in page.log %}
+  <li class="log__item{% if item.status == 'now' %} log__item--now{% endif %}">
+    <span class="eyebrow log__status log__status--{{ item.status }}">{% include icon.html name=item.status %}{{ item.status | capitalize }}</span>
+    <span class="log__text">{{ item.text }}</span>
+  </li>
+  {%- endfor %}
+</ol>

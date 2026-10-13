@@ -1,0 +1,6 @@
+{%- comment -%} Where a project in _data/projects.yml points: its case study, or its card on /work/. {%- endcomment -%}
+{%- if include.project.case_study -%}
+{{ '/work/' | append: include.project.case_study | append: '/' | relative_url }}
+{%- else -%}
+{{ '/work/' | relative_url }}#{{ include.project.id }}
+{%- endif -%}

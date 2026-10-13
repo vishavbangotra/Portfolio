@@ -1,0 +1,11 @@
+# The "Now" block on the home page. Bump `updated` whenever you edit it.
+updated: 2026-10-13
+items:
+  - label: Building
+    text: MiniProxy, a reverse proxy in Java. Health checks are next.
+  - label: Learning
+    text: Kafka, from the log upwards.
+  - label: Reading
+    text: Seneca's letters, slowly.
+  - label: Practising
+    text: Guitar, and writing songs badly until they're less bad.

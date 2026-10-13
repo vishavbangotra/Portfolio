@@ -1,0 +1,52 @@
+# Projects, in display order. Used by "Selected work" on the home page,
+# the cards on the Work page, and previous/next links on case studies.
+# `case_study` is the slug of a file in _projects/ (omit when there isn't one).
+- id: fraud-screening
+  title: Applicant-fraud screening
+  label: Airtel Financial Services
+  summary: >-
+    A rules engine with an Isolation Forest sidecar that screens loan
+    applicants at origination. Kafka Streams, Redis windows, a Python/FastAPI
+    model service.
+  description: >-
+    Screens people applying for loans before a decision is made. A rules engine
+    catches the known patterns; an Isolation Forest model, served from a
+    FastAPI sidecar, flags the strange ones. Redis holds the sliding windows.
+  stack: Kafka Streams · Redis · Python · MongoDB
+
+- id: miniproxy
+  title: MiniProxy
+  label: Side project · In progress
+  case_study: miniproxy
+  summary: >-
+    A reverse proxy written from first principles in Java. Round-robin
+    balancing works; health checks, rate limiting and circuit breaking come
+    next.
+  description: >-
+    A reverse proxy built from first principles in Java, to understand what
+    sits between a client and a fleet of servers — and to own the concurrency,
+    not borrow it.
+  stack: Java · Spring Boot · Docker
+
+- id: lending-integrations
+  title: Lending partner integrations
+  label: Airtel Financial Services
+  summary: >-
+    LOS and LMS integrations for gold, personal and business loans, including
+    the Airtel Money NBFC launch and PFL partner flows.
+  description: >-
+    Origination and servicing integrations for gold, personal and business
+    loans, including the Airtel Money NBFC launch. Encrypted partner APIs, EMI
+    schedules that have to add up.
+  stack: Java · Spring Boot · Kafka · PostgreSQL
+
+- id: sisyphus
+  title: Sisyphus
+  label: Design · 2026
+  summary: >-
+    A personal design system. Bone, ink and one ember. This site is built on it.
+  description: >-
+    A personal design system where every choice had to answer “why is this
+    here?”. Bone and ink, one ember accent, no shadows. This site is its first
+    user.
+  stack: Tokens · Newsreader · IBM Plex Mono

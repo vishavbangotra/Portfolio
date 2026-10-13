@@ -1,0 +1,23 @@
+# Work page → Experience. Leave a field empty to hide it.
+- dates: Feb 2026 — Now
+  org: Airtel Financial Services
+  role: Software Engineer (SDE1), via Xtelify
+  summary: >-
+    The lending platform: LOS and LMS integrations across gold, personal and
+    business loans, plus Airtel Money and PFL partner integrations. Built the
+    applicant-fraud screening service. Production ownership on rotation.
+
+- dates: "" # TODO: e.g. "Jul 2023 — Jan 2026"
+  org: LifeByte Systems
+  role: Software Engineer, full-stack
+  summary: >-
+    Serverless ETL on AWS and analytics for forex brokers — moving trading data
+    from source systems into something a person could read.
+
+- dates: "" # TODO: year
+  org: KPMG India
+  role: Intern, information security
+
+- dates: "" # TODO: years
+  org: UIET, Panjab University
+  role: "" # TODO: degree, e.g. "B.E., Computer Science and Engineering"

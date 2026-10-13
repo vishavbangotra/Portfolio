@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<a class="back-link" href="{{ '/journal/' | relative_url }}">{% include icon.html name="arrow-left" %} Journal</a>
+
+<article class="entry">
+  <p class="eyebrow">{{ page.topic }}</p>
+  <h1 class="display entry__title">{{ page.title }}</h1>
+  <p class="mono entry__meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d %B %Y" }}</time> · {% include read-time.html content=content %}</p>
+
+  <div class="prose entry__body">
+    {{ content }}
+  </div>
+
+  <div class="entry__reply">
+    <p class="small">Thoughts on this? I read every reply.</p>
+    <a class="link link--ember" href="mailto:{{ site.email }}?subject={{ page.title | uri_escape }}">Reply by email {% include icon.html name="arrow-right" px=16 %}</a>
+  </div>
+
+  {%- if page.previous or page.next %}
+  <nav class="entry__more" aria-label="More entries">
+    {%- if page.previous %}
+    <a class="pager__link" href="{{ page.previous.url | relative_url }}">
+      <span class="eyebrow">Older</span>
+      <span class="h-item">{{ page.previous.title }}</span>
+    </a>
+    {%- endif %}
+    {%- if page.next %}
+    <a class="pager__link{% unless page.previous %} pager__link--next{% endunless %}" href="{{ page.next.url | relative_url }}">
+      <span class="eyebrow">Newer</span>
+      <span class="h-item">{{ page.next.title }}</span>
+    </a>
+    {%- endif %}
+  </nav>
+  {%- endif %}
+</article>

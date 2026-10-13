@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<a class="back-link" href="{{ '/work/' | relative_url }}">{% include icon.html name="arrow-left" %} All work</a>
+
+<section class="hero hero--tight hero--case">
+  <p class="eyebrow">{{ page.label }}</p>
+  <h1 class="display">{{ page.title }}</h1>
+  {%- if page.lede %}
+  <p class="lede hero__lede measure">{{ page.lede }}</p>
+  {%- endif %}
+</section>
+
+{%- if page.facts %}
+<dl class="facts">
+  {%- for fact in page.facts %}
+  {%- if fact.value and fact.value != "" %}
+  <div>
+    <dt class="eyebrow">{{ fact.label }}</dt>
+    <dd>{% if fact.href and fact.href != "" %}<a href="{{ fact.href }}">{{ fact.value }}</a>{% else %}{{ fact.value }}{% endif %}</dd>
+  </div>
+  {%- endif %}
+  {%- endfor %}
+</dl>
+{%- endif %}
+
+<article class="prose prose--wide">
+  {{ content }}
+</article>
+
+{%- for p in site.data.projects %}
+  {%- if p.case_study == page.slug %}{% assign idx = forloop.index0 %}{% endif %}
+{%- endfor %}
+{%- if idx %}
+  {%- assign prev_idx = idx | minus: 1 %}
+  {%- assign next_idx = idx | plus: 1 %}
+  {%- if prev_idx >= 0 %}{% assign prev = site.data.projects[prev_idx] %}{% endif %}
+  {%- assign next = site.data.projects[next_idx] %}
+  <nav class="pager" aria-label="Projects">
+    {%- if prev %}
+    <a class="pager__link" href="{% include project-link.html project=prev %}">
+      <span class="eyebrow">Previous</span>
+      <span class="h-item">{{ prev.title }}</span>
+    </a>
+    {%- endif %}
+    {%- if next %}
+    <a class="pager__link pager__link--next" href="{% include project-link.html project=next %}">
+      <span class="eyebrow">Next</span>
+      <span class="h-item">{{ next.title }}</span>
+    </a>
+    {%- endif %}
+  </nav>
+{%- endif %}
