@@ -1052,3 +1052,19 @@ svg {
 .prose .empty-box .small {
   margin-top: 8px;
 }
+
+/* Numbered notes in a journal entry ("1.", "2." …). */
+.prose .numeral {
+  margin-top: 48px;
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--ember);
+}
+.prose .numeral:first-child {
+  margin-top: 24px;
+}
+.prose .numeral + p {
+  margin-top: 8px;
+}
