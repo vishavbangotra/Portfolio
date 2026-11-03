@@ -1068,3 +1068,20 @@ svg {
 .prose .numeral + p {
   margin-top: 8px;
 }
+
+/* An image at the top of (or inside) a journal entry. */
+.prose figure {
+  margin: 32px 0 0;
+}
+.prose figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+.prose figcaption {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--muted);
+}
