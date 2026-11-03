@@ -2,7 +2,13 @@
 title: On Trusting Oneself
 topic: Philosophy
 description: Eight notes on instinct, the herd, and walking toward the thing you avoid.
+image: /assets/images/journal/death-of-socrates.jpg
 ---
+
+<figure class="entry__figure">
+  <img src="{{ '/assets/images/journal/death-of-socrates.jpg' | relative_url }}" width="1600" height="1051" alt="Socrates sits upright on a prison bed, one hand reaching for the cup of hemlock and the other pointing upward as he keeps speaking, while his weeping followers turn away around him.">
+  <figcaption>Jacques-Louis David, <cite>The Death of Socrates</cite>, 1787. The Metropolitan Museum of Art.</figcaption>
+</figure>
 
 1\.
 {: .numeral}
