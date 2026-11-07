@@ -578,17 +578,6 @@ svg {
 .exp-row__summary {
   margin-top: 16px;
 }
-.exp-row__bullets {
-  margin-top: 16px;
-  padding-left: 1.25em;
-  list-style: square;
-}
-.exp-row__bullets li + li {
-  margin-top: 8px;
-}
-.exp-row__bullets li::marker {
-  color: var(--stone);
-}
 
 .entry-row {
   display: flex;

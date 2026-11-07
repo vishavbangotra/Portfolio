@@ -7,28 +7,6 @@
     a month: loan journeys, NBFC partner integrations, and a journey engine I
     built as a Mealy finite-state machine, so a new lending flow is
     configuration, not code.
-  bullets:
-    - >-
-      Architected a journey engine on a Mealy finite-state machine model, where
-      each transition emits side effects based on the current state and input.
-      This makes loan flows declarative, auditable and safe to resume
-      mid-journey.
-    # TODO: swap in real figures, e.g. "from [X] weeks to [Y] days".
-    - >-
-      Built config-driven lending journeys that let NBFC partners join through
-      configuration rather than code, cutting partner onboarding from weeks to
-      days.
-    - >-
-      Delivered personal loan, repeat loan, top-up and loan-management journeys
-      end to end on a platform disbursing ₹800 Cr monthly.
-    - >-
-      Integrated the launch of Airtel Money as Airtel’s in-house NBFC lender,
-      wiring its origination and disbursal flows into the shared journey
-      platform next to the external partners.
-    # TODO: add the partner count, e.g. "with [N] NBFCs".
-    - >-
-      Engineered partner integrations with multiple NBFCs, standardising their
-      APIs behind one contract for eligibility, disbursal and repayment.
 
 - dates: Jul 2023 — Jun 2025
   org: LifeByte Systems
