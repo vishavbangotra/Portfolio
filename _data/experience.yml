@@ -3,11 +3,10 @@
   org: Airtel Financial Services
   role: Software Engineer (SDE1), via Xtelify
   summary: >-
-    Backend engineer on Airtel’s fintech lending platform, which disburses
-    ₹800 Cr a month. I build loan journeys and NBFC partner integrations,
-    including the launch of Airtel Money’s own lending stack. I also designed
-    the platform’s journey engine, built as a Mealy finite-state machine, so
-    partner flows can be added through config instead of new code.
+    Backend engineering for Airtel’s lending platform, which disburses ₹800 Cr
+    a month: loan journeys, NBFC partner integrations, and the launch of Airtel
+    Money’s in-house lending. I also designed the journey engine underneath it,
+    so a new partner flow is configuration rather than new code.
   bullets:
     - >-
       Architected a journey engine on a Mealy finite-state machine model, where
