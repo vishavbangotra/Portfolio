@@ -24,6 +24,13 @@ description: Where I've worked, what I've built, and what I'm still building.
         {%- if job.summary %}
         <p class="exp-row__summary">{{ job.summary }}</p>
         {%- endif %}
+        {%- if job.bullets and job.bullets.size > 0 %}
+        <ul class="exp-row__bullets">
+          {%- for b in job.bullets %}
+          <li>{{ b }}</li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
       </div>
     </li>
     {%- endfor %}
