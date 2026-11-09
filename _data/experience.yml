@@ -3,19 +3,18 @@
   org: Airtel Financial Services
   role: Software Engineer (SDE1), via Xtelify
   summary: >-
-    Backend engineering for Airtel’s lending platform, which disburses ₹800 Cr
-    a month: loan journeys, NBFC partner integrations, and a journey engine I
-    built as a Mealy finite-state machine, so a new lending flow is
-    configuration, not code.
+    Backend engineer at Airtel, developing a lending platform powered by a
+    Mealy finite-state machine architecture and processing ₹800 crore in
+    monthly loan disbursals.
 
 - dates: Jul 2023 — Jun 2025
   org: LifeByte Systems
   role: Software Engineer, full-stack · Hyderabad
   summary: >-
-    Serverless ETL on AWS and analytics for forex brokers — moving trading data
-    from source systems into something a person could read. Step Functions and
-    Lambda feeding Snowflake, a Kafka market-data platform, and a Spring Batch
-    reconciliation job that turned an 8-hour manual audit into 30 minutes.
+    Full-stack engineering focused on transforming raw trading data from source
+    systems into actionable insights through intuitive, data-driven
+    applications that enable users to analyse performance and make informed
+    business decisions.
 
 - dates: Jan 2023 — Jun 2023
   org: KPMG India
