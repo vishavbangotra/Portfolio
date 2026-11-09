@@ -3,10 +3,9 @@
   org: Airtel Financial Services
   role: Software Engineer (SDE1), via Xtelify
   summary: >-
-    Backend engineering for Airtel’s lending platform, which disburses ₹800 Cr
-    a month: loan journeys, NBFC partner integrations, and a journey engine I
-    built as a Mealy finite-state machine, so a new lending flow is
-    configuration, not code.
+    Backend engineer at Airtel, developing a lending platform powered by a
+    Mealy finite-state machine architecture and processing ₹800 crore in
+    monthly loan disbursals.
 
 - dates: Jul 2023 — Jun 2025
   org: LifeByte Systems
